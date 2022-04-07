@@ -37,3 +37,20 @@
   border-radius: 1rem;
   border-bottom: 2px solid rgb(124, 0, 124);
 }
+
+@media only screen and (max-width: 1279px) {
+  .page-title {
+    padding: 2rem 0 1rem 0;
+  }
+
+  .about-wrapper {
+    flex-direction: column;
+    width: 80vw;
+  }
+
+  .about-me,
+  .about-trybe {
+    width: 80vw;
+    margin-bottom: 1rem;
+  }
+}
