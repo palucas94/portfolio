@@ -18,6 +18,24 @@
   color: rgb(255, 255, 255);
   font-size: 5rem;
   padding: 0 0.5rem;
+  animation: glitch 5s 5s infinite;
+}
+
+.title::before {
+  content: attr(data-text);
+  position: absolute;
+  text-shadow: -0.1rem 0 rgb(124, 0, 124);
+  overflow: hidden;
+  animation: noise-1 3s linear infinite alternate-reverse, glitch 5s 5.05s infinite;
+}
+
+.title::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0.5rem;
+  text-shadow: -0.1rem 0 black;
+  overflow: hidden;
+  animation: noise-2 3s linear infinite alternate-reverse, glitch 5s 5s infinite;
 }
 
 .subtitle {
@@ -28,6 +46,7 @@
   font-size: 1.25rem;
   letter-spacing: 0.5rem;
   padding: 1rem;
+  animation: glitch 10s 10.02s infinite;
 }
 
 .home-socials {
@@ -37,4 +56,35 @@
 .home-socials a {
   color: rgb(255, 255, 255);
   padding: 1rem;
+}
+
+@keyframes glitch {
+  1% {
+    transform: rotateX(10deg) skewX(80deg);
+  }
+  2% {
+    transform: rotateX(0deg) skewX(0deg);
+  }
+}
+
+@keyframes noise-1 {
+  $steps: 30;
+  @for $i from 1 through $steps {
+    #{percentage($i*(1/$steps))} {
+      $top: random(100);
+      $bottom: random(101 - $top);
+      clip-path: inset(#{$top}px 0 #{$bottom}px 0);
+    }
+  }
+}
+
+@keyframes noise-2 {
+  $steps: 30;
+  @for $i from 0 through $steps {
+    #{percentage($i*(1/$steps))} {
+      $top: random(100);
+      $bottom: random(101 - $top);
+      clip-path: inset(#{$top}px 0 #{$bottom}px 0);
+    }
+  }
 }
