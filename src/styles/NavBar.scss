@@ -37,3 +37,9 @@
 .navbar .nav-link:nth-child(even):hover {
   padding-left: 5%;
 }
+
+@media only screen and (max-width: 1279px) {
+  .navbar {
+    display: none;
+  }
+}
