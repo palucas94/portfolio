@@ -1,0 +1,39 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-link {
+  cursor: pointer;
+  width: 13rem;
+  height: 2.5rem;
+  border-radius: 0.2rem;
+  font-size: 1.5rem;
+  margin: 0.75rem;
+  letter-spacing: 0.2rem;
+  line-height: 2.5rem;
+  font-weight: 900;
+  transition: 0.5s;
+}
+
+.navbar .nav-link:nth-child(odd) {
+  color: white;
+  background: linear-gradient(to right, rgb(35, 35, 35), rgb(124, 0, 124));
+  text-align: right;
+  padding-right: 10%;
+}
+
+.navbar .nav-link:nth-child(odd):hover {
+  padding-right: 5%;
+}
+
+.navbar .nav-link:nth-child(even) {
+  color: white;
+  background: linear-gradient(to left, rgb(35, 35, 35), rgb(124, 0, 124));
+  text-align: left;
+  padding-left: 10%;
+}
+
+.navbar .nav-link:nth-child(even):hover {
+  padding-left: 5%;
+}
