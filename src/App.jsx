@@ -7,6 +7,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Home from './pages/Home';
 import About from './pages/About';
+import Skills from './pages/Skills';
 
 function App() {
   useEffect(() => {
@@ -17,6 +18,7 @@ function App() {
     <div className="App">
       <Home />
       <About />
+      <Skills />
     </div>
   );
 }
