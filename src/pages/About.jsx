@@ -7,16 +7,18 @@ function About() {
       <div className="about-wrapper">
         <div className="about-me">
           <h3 className="about-subtitle">Me</h3>
-          <p>{'I\'m a Brazilian Full Stack Developer currently located in France.'}</p>
-          <p>Studying at Trybe since July/2021.</p>
-          <p>
-            Fluent in Portuguese, English and French,
-            I am excited about working with people from all over the world.
-          </p>
-          <p>
-            Looking forward to working with positive people that
-            will bring amazing and ambitious projects to life.
-          </p>
+          <div className="text">
+            <p>{'I\'m a Brazilian Full Stack Developer currently located in France.'}</p>
+            <p>Studying at Trybe since July/2021.</p>
+            <p>
+              Fluent in Portuguese, English and French,
+              I am excited about working with people from all over the world.
+            </p>
+            <p>
+              Looking forward to working with positive people that
+              will bring amazing and ambitious projects to life.
+            </p>
+          </div>
         </div>
         <div className="about-trybe">
           <h3 className="about-subtitle">Trybe</h3>

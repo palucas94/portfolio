@@ -1,0 +1,39 @@
+.about-container {
+  min-height: 100vh;
+  color: rgb(255, 255, 255);
+  background: rgb(30, 30, 30);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.page-title {
+  text-transform: uppercase;
+  letter-spacing: 0.75rem;
+  font-size: 3rem;
+}
+
+.about-wrapper {
+  width: 70vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-subtitle {
+  font-size: 2rem;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.about-me,
+.about-trybe {
+  width: 30vw;
+  text-indent: 1rem;
+  letter-spacing: 0.1rem;
+  background: rgb(35, 35, 35);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border-bottom: 2px solid rgb(124, 0, 124);
+}
