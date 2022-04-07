@@ -17,14 +17,14 @@ function Home() {
           </div>
         </div>
         <p className="subtitle">Full Stack Developer</p>
-      </div>
-      <div className="home-socials">
-        <a target="_blank" href="https://www.linkedin.com/in/lucas-pontes-arruda" rel="noreferrer">
-          <i className="devicon-linkedin-plain" />
-        </a>
-        <a target="_blank" href="https://github.com/palucas94" rel="noreferrer">
-          <i className="devicon-github-original" />
-        </a>
+        <div className="home-socials">
+          <a target="_blank" href="https://www.linkedin.com/in/lucas-pontes-arruda" rel="noreferrer">
+            <i className="devicon-linkedin-plain" />
+          </a>
+          <a target="_blank" href="https://github.com/palucas94" rel="noreferrer">
+            <i className="devicon-github-original" />
+          </a>
+        </div>
       </div>
     </div>
   );
