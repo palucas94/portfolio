@@ -3,9 +3,9 @@ import React from 'react';
 function About() {
   return (
     <div id="about" className="about-container">
-      <h2 className="page-title">About</h2>
+      <h2 className="page-title" data-aos="zoom-in">About</h2>
       <div className="about-wrapper">
-        <div className="about-me">
+        <div className="about-me" data-aos="flip-right">
           <h3 className="about-subtitle">Me</h3>
           <div className="text">
             <p>{'I\'m a Brazilian Full Stack Developer currently located in France.'}</p>
@@ -20,7 +20,7 @@ function About() {
             </p>
           </div>
         </div>
-        <div className="about-trybe">
+        <div className="about-trybe" data-aos="flip-left">
           <h3 className="about-subtitle">Trybe</h3>
           <p>
             Trybe is a web development school that has a
