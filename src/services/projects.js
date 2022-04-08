@@ -15,7 +15,7 @@ const PROJECTS = [
     id: 2,
     name: 'PlayTunes',
     image: PlayTunesImg,
-    description: 'Using iTunes API, the user can search for any artist and find all relevant albums related to that search. After selecting an album the user can listen to a sample of each song from the album. It is possible to add favorite songs and edit user profile.',
+    description: 'In this music app made with iTunes API, the user can search for any artist and find all relevant albums related to that search. After selecting an album the user can listen to a sample of each song from the album. It is possible to add favorite songs and edit user profile.',
     stacks: ['HTML', 'CSS', 'JavaScript', 'React'],
     repository: 'https://github.com/palucas94/playtunes-music-app',
     deploy: 'https://palucas-playtunes.vercel.app/',
