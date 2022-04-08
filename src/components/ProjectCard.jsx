@@ -6,7 +6,7 @@ function ProjectCard(project) {
   } = project;
 
   return (
-    <div className="project-card">
+    <div className="project-card" data-aos="flip-right">
       <a target="_blank" href={deploy} rel="noreferrer">
         <img className="project-img" src={image} alt={name} />
       </a>
