@@ -4,7 +4,7 @@ import PROJECTS from '../services/projects';
 
 function Projects() {
   return (
-    <div className="projects-container">
+    <div id="projects" className="projects-container">
       <h2 className="projects-title">Projects</h2>
       <p>More coming soon...</p>
       <div className="projects-wrapper">
