@@ -3,6 +3,7 @@ import './styles/Home.scss';
 import './styles/NavBar.scss';
 import './styles/About.scss';
 import './styles/Skills.scss';
+import './styles/Projects.scss';
 import './styles/Contact.scss';
 import React, { useEffect } from 'react';
 import AOS from 'aos';
@@ -11,6 +12,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Skills from './pages/Skills';
 import Contact from './pages/Contact';
+import Projects from './pages/Projects';
 
 function App() {
   useEffect(() => {
@@ -22,6 +24,7 @@ function App() {
       <Home />
       <About />
       <Skills />
+      <Projects />
       <Contact />
     </div>
   );
