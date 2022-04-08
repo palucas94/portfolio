@@ -3,9 +3,9 @@ import React from 'react';
 function Contact() {
   return (
     <div id="contact" className="contact-container">
-      <h2 className="contact-title">Contact</h2>
-      <p className="contact-subtitle">Connect with me anytime</p>
-      <div className="socials-container">
+      <h2 className="contact-title" data-aos="zoom-in">Contact</h2>
+      <p className="contact-subtitle" data-aos="zoom-in">Connect with me anytime</p>
+      <div className="socials-container" data-aos="zoom-in">
         <a className="contact-mail" href="mailto:paluke94@gmail.com">Say Hello</a>
         <div className="socials-wrapper">
           <a target="_blank" href="https://www.linkedin.com/in/lucas-pontes-arruda" rel="noreferrer">
