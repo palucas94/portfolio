@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 import NavBar from '../components/NavBar';
 
 function Home() {
@@ -26,6 +27,7 @@ function Home() {
             <i className="devicon-github-original" />
           </a>
         </div>
+        <Link smooth to="about"><div className="arrow" /></Link>
       </div>
       <NavBar />
     </div>
