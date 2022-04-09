@@ -40,7 +40,7 @@ function App() {
   };
 
   useEffect(() => {
-    AOS.init({ duration: 3000 });
+    AOS.init({ duration: 3000, once: true });
     window.addEventListener('scroll', pageSetter);
   }, []);
 
