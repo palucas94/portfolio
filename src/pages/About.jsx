@@ -9,15 +9,9 @@ function About() {
           <h3 className="about-subtitle">Me</h3>
           <div className="text">
             <p>{'I\'m a Brazilian Full Stack Developer currently located in France.'}</p>
-            <p>Studying at Trybe since July/2021.</p>
-            <p>
-              Fluent in Portuguese, English and French,
-              I am excited about working with people from all over the world.
-            </p>
-            <p>
-              Looking forward to working with positive people that
-              will bring amazing and ambitious projects to life.
-            </p>
+            <p>I have been studying Full Stack Development at Trybe since July/2021.</p>
+            <br />
+            <p>{'Fluent in Portuguese, English and French, I\'m looking forward to working with positive people from all over the world, using my skills to solve problems, collaborate with others and bring amazing projects to life.'}</p>
           </div>
         </div>
         <div className="about-trybe" data-aos="flip-left">
