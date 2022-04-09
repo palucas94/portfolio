@@ -3,7 +3,7 @@ import NavBar from '../components/NavBar';
 
 function Home() {
   return (
-    <div className="page-container">
+    <div id="home" className="page-container">
       <div className="title-container">
         <p className="subtitle" data-aos="fade-down">{'Hi, I\'m'}</p>
         <div className="title-wrapper" data-aos="zoom-in">

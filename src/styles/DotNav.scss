@@ -1,0 +1,21 @@
+.dotnav {
+  position: fixed;
+  top: 40vh;
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+}
+
+.dotnav-link {
+  cursor: pointer;
+  margin: 0.5rem;
+  border: 0.4rem solid rgb(255, 255, 255);
+  border-radius: 100%;
+}
+
+.dotnav-selected {
+  cursor: pointer;
+  margin: 0.5rem;
+  border: 0.4rem solid rgb(127, 0, 127);
+  border-radius: 100%;
+}
