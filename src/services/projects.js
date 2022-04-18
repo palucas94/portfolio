@@ -1,24 +1,44 @@
 import ToDoAppImg from '../images/palucas-todoapp.png';
 import PlayTunesImg from '../images/palucas-playtunes.png';
+import GerichtImg from '../images/palucas-gericht-restaurant.png';
+import WitwImg from '../images/palucas-witw.png';
 
 const PROJECTS = [
   {
     id: 1,
-    name: 'To Do App',
-    image: ToDoAppImg,
-    description: 'In this Todo App the user can add a new to do, mark it as complete, filter it by status and delete it. The app also saves the list in local storage.',
-    stacks: ['HTML', 'CSS', 'JavaScript', 'React'],
-    repository: 'https://github.com/palucas94/react-todo-app',
-    deploy: 'https://palucas-todo-list.vercel.app/',
+    name: 'Where in the world?',
+    image: WitwImg,
+    description: 'Fully responsive website where the user can find information about any country in the world. Filter by region and/or search for an specific country.  ',
+    stacks: ['React', 'CSS', 'Context', 'API'],
+    repository: 'https://github.com/palucas94/where-in-the-world',
+    deploy: 'https://palucas-witw.vercel.app/',
   },
   {
     id: 2,
+    name: 'Gericht Restaurant',
+    image: GerichtImg,
+    description: 'A restaurant landing page. Based on a figma design, this is a fully responsive website with Modern UI and UX.',
+    stacks: ['React', 'CSS'],
+    repository: 'https://github.com/palucas94/gericht-restaurant',
+    deploy: 'https://palucas-gericht-restaurant.vercel.app/',
+  },
+  {
+    id: 3,
     name: 'PlayTunes',
     image: PlayTunesImg,
-    description: 'In this music app made with iTunes API, the user can search for any artist and find all relevant albums related to that search. After selecting an album the user can listen to a sample of each song from the album. It is possible to add favorite songs and edit user profile.',
-    stacks: ['HTML', 'CSS', 'JavaScript', 'React'],
+    description: 'Music App based on a Figma design where the user can search for any artist, listen to music samples, add favorite songs and edit profile.',
+    stacks: ['React', 'CSS', 'API'],
     repository: 'https://github.com/palucas94/playtunes-music-app',
     deploy: 'https://palucas-playtunes.vercel.app/',
+  },
+  {
+    id: 4,
+    name: 'To Do App',
+    image: ToDoAppImg,
+    description: 'A Todo App where the user can add, mark as complete, filter and delete todos. The list is also saved in the local storage.',
+    stacks: ['React', 'CSS'],
+    repository: 'https://github.com/palucas94/react-todo-app',
+    deploy: 'https://palucas-todo-list.vercel.app/',
   },
 ];
 
