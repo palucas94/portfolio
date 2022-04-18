@@ -22,9 +22,9 @@
   width: 75vw;
   display: flex;
   justify-content: flex-start;
-  
+
   max-width: max-content;
-  overflow: hidden;
+  overflow-x: scroll;
 }
 
 .project-card {
