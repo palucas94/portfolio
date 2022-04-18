@@ -136,17 +136,20 @@
 
 
 @media only screen and (max-width: 850px) {
-  .projects-container {
-    height: 80vh;
-  }
-
   .projects-wrapper {
-    width: 75vw;
+    margin-top: 3rem;
+    width: 90vw;
   }
 
   .project-info{
     height: 30vh;
     width: 70vw;
+    font-size: 0.8rem;
+  }
+
+  .project-description {
+    font-size: 0.75rem;
+    text-align: center;
   }
 
   .project-card {
@@ -173,8 +176,6 @@
 
   .arrow-left,
   .arrow-right {
-    height: 1rem;
-    width: 1rem;
-    bottom: 50%;
+    display: none;
   }
 }
