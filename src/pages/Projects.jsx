@@ -3,11 +3,23 @@ import ProjectCard from '../components/ProjectCard';
 import PROJECTS from '../services/projects';
 
 function Projects() {
+  const scrollRef = React.useRef(null);
+
+  const scroll = (direction) => {
+    const { current } = scrollRef;
+
+    if (direction === 'left') {
+      current.scrollLeft -= 300;
+    } else {
+      current.scrollLeft += 300;
+    }
+  };
+
   return (
     <div id="projects" className="projects-container">
       <h2 className="projects-title" data-aos="zoom-in">Projects</h2>
       <p data-aos="zoom-in">More coming soon...</p>
-      <div className="projects-wrapper">
+      <div className="projects-wrapper" ref={scrollRef}>
         {PROJECTS.map(({
           name, image, description, stacks, repository, deploy,
         }) => (
@@ -20,6 +32,15 @@ function Projects() {
             deploy={deploy}
           />
         ))}
+      </div>
+
+      <div className="project-arrows">
+        <button type="button" onClick={() => scroll('left')}>
+          <div className="arrow-left" />
+        </button>
+        <button type="button" onClick={() => scroll('right')}>
+          <div className="arrow-right" />
+        </button>
       </div>
     </div>
   );
