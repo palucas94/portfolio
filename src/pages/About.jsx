@@ -23,6 +23,7 @@ function About() {
               Trybe is a web development school that has a
               genuine commitment to the professional success of its students.
             </p>
+            <br />
             <p>
               The web development training program from Trybe has a workload
               of more than 1500 hours that covers the fundamentals of web development,
