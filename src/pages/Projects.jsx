@@ -16,14 +16,15 @@ function Projects() {
   };
 
   return (
-    <div id="projects" className="projects-container">
-      <h2 className="projects-title" data-aos="zoom-in">Projects</h2>
-      <p data-aos="zoom-in">More coming soon...</p>
+    <div id="projects" className="page projects-container">
+      <h2 className="page-title" data-aos="zoom-in">Projects</h2>
+      <p className="page-subtitle" data-aos="zoom-in">More coming soon...</p>
       <div className="projects-wrapper" ref={scrollRef}>
         {PROJECTS.map(({
-          name, image, description, stacks, repository, deploy,
+          id, name, image, description, stacks, repository, deploy,
         }) => (
           <ProjectCard
+            key={id}
             name={name}
             image={image}
             description={description}

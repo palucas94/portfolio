@@ -3,15 +3,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: rgb(255, 255, 255);
-  background: rgb(35, 35, 35);
-}
-
-.contact-title {
-  text-transform: uppercase;
-  letter-spacing: 0.75rem;
-  font-size: 3rem;
-  padding-top: 2rem;
+  color: var(--color-white);
+  background: var(--color-dark-gray-bg);
 }
 
 .socials-container {
@@ -20,24 +13,24 @@
 }
 
 .contact-mail {
-  text-align: center;
-  color: rgb(255, 255, 255);
+  color: var(--color-white);
   font-size: 1.25rem;
-  background: rgb(35, 35, 35);
+  text-align: center;
+
   padding: 0.5rem;
-  border: 0.1rem solid rgb(127, 0, 127);
-  border-radius: 1rem;
   margin: 2rem;
+  border: 0.1rem solid var(--color-dark-magenta);
+  border-radius: 1rem;
 }
 
 .socials-wrapper {
   font-size: 2.5rem;
-  margin-bottom: 2rem;
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 .socials-wrapper a {
+  color: var(--color-white);
   padding: 0.5rem;
-  color: rgb(255, 255, 255);
 }
 

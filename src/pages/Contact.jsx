@@ -3,7 +3,7 @@ import React from 'react';
 function Contact() {
   return (
     <div id="contact" className="contact-container">
-      <h2 className="contact-title" data-aos="zoom-in">Contact</h2>
+      <h2 className="page-title" data-aos="zoom-in">Contact</h2>
       <p className="contact-subtitle" data-aos="zoom-in">Connect with me anytime</p>
       <div className="socials-container" data-aos="zoom-in">
         <a className="contact-mail" href="mailto:paluke94@gmail.com">Say Hello</a>

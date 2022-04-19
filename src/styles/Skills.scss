@@ -1,41 +1,36 @@
 .skills-container {
-  min-height: 100vh;
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: rgb(255, 255, 255);
-  background: rgb(35, 35, 35);
-}
-
-.skills-title {
-  text-transform: uppercase;
-  letter-spacing: 0.75rem;
-  font-size: 3rem;
-  padding-top: 2rem;
+  color: var(--color-white);
+  background: var(--color-dark-gray-bg);
 }
 
 .skills-wrapper {
   width: 70vw;
+
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+
   margin: auto;
   overflow: hidden;
 }
 
 .skillcard-wrapper {
+  background: var(--color-very-dark-gray-bg);
   width: 8rem;
   height: 8rem;
-  margin: 2rem;
-  border-radius: 0.5rem;
+  
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  background: rgb(30, 30, 30);
-  border-bottom: 0.1rem solid rgb(124, 0, 124);
+  align-items: center;
+  
+  margin: 2rem;
+  border-radius: 0.5rem;
+  border-bottom: 0.1rem solid var(--color-dark-magenta);
 }
 
 .skillcard-wrapper i {
@@ -49,42 +44,22 @@
 
 @media only screen and (max-width: 850px) {
   .skills-wrapper {
-    width: 90vw;
+    width: 80vw;
   }
 }
 
 @media only screen and (max-width: 685px) {
+  .skills-wrapper {
+    width: 90vw;
+  }
+
   .skillcard-wrapper {
     width: 6rem;
     height: 6rem;
     margin: 1rem;
-    border-radius: 0.5rem;
   }
 
   .skillcard-wrapper i {
     font-size: 2rem;
-    padding: 0.5rem;
-  }
-  
-  .skill-name {
-    font-size: 1rem;
-  }
-}
-
-@media only screen and (max-width: 375px) {
-  .skillcard-wrapper {
-    width: 5rem;
-    height: 5rem;
-    margin: 0.5rem;
-    border-radius: 0.5rem;
-  }
-
-  .skillcard-wrapper i {
-    font-size: 2rem;
-    padding: 0.5rem;
-  }
-  
-  .skill-name {
-    font-size: 0.75rem;
   }
 }

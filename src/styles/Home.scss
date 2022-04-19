@@ -2,10 +2,7 @@
   position: relative;
 }
 
-.page-container {
-  height: 100vh;
-  background-color: rgb(35, 35, 35);
-  display: flex;
+.home-container {
   justify-content: space-evenly;
   align-items: center;
 }
@@ -15,7 +12,7 @@
 }
 
 .title {
-  color: rgb(255, 255, 255);
+  color: var(--color-white);
   font-size: 5rem;
   padding: 0 0.5rem;
 }
@@ -23,7 +20,7 @@
 .title::before {
   content: attr(data-text);
   position: absolute;
-  text-shadow: -0.1rem 0 rgb(124, 0, 124);
+  text-shadow: -0.1rem 0 var(--color-dark-magenta);
   overflow: hidden;
   animation: noise-1 3s linear infinite alternate-reverse, glitch 5s 5.05s infinite;
 }
@@ -32,7 +29,7 @@
   content: attr(data-text);
   position: absolute;
   left: 0.5rem;
-  text-shadow: -0.1rem 0 black;
+  text-shadow: -0.1rem 0 var(--color-black);
   overflow: hidden;
   animation: noise-2 3s linear infinite alternate-reverse, glitch 5s 5s infinite;
 }
@@ -53,21 +50,8 @@
 }
 
 .home-socials a {
-  color: rgb(255, 255, 255);
+  color: var(--color-white);
   padding: 1rem;
-}
-
-.arrow {
-  position: absolute;
-  bottom: 7vh;
-  left: 50%;
-  height: 2rem;
-  width: 2rem;
-  margin-left: -1rem;
-  border-right: 0.1rem solid white;
-  border-bottom: 0.1rem solid white;
-  transform: rotate(45deg);
-  cursor: pointer;
 }
 
 @keyframes glitch {
@@ -123,6 +107,11 @@
     font-size: 3rem;
   }
 
+  .title::before,
+  .title::after {
+    animation: none;
+  }
+  
   .subtitle {
     text-align: center;
   }

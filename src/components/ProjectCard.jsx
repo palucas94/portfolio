@@ -10,11 +10,12 @@ function ProjectCard(project) {
       <a target="_blank" href={deploy} rel="noreferrer">
         <img className="project-img" src={image} alt={name} />
       </a>
+
       <div className="project-info">
         <h3 className="project-name">{ name }</h3>
         <p className="project-description">{description}</p>
         <div className="bottom-wrapper">
-          <div>{stacks.map((s) => <span className="project-stack">{s}</span>)}</div>
+          <div>{stacks.map((s, i) => <span key={`${name + s.name + i}`} className="project-stack">{s}</span>)}</div>
           <div>
             <a target="_blank" href={repository} rel="noreferrer">
               <i className="devicon-github-original" />

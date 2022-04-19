@@ -1,60 +1,82 @@
 .about-container {
-  min-height: 100vh;
-  color: rgb(255, 255, 255);
-  background: rgb(30, 30, 30);
-  display: flex;
+  color: var(--color-white);
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
 }
 
-.page-title {
-  text-transform: uppercase;
-  letter-spacing: 0.75rem;
-  font-size: 3rem;
-}
-
 .about-wrapper {
+  height: 70vh;
   width: 70vw;
+  line-height: 2rem;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-  line-height: 2rem;
 }
 
-.about-subtitle {
+.about-column {
+  height: 100%;
+  width: 30vw;
+
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border-bottom: 2px solid var(--color-dark-magenta);
+}
+
+.about-column-subtitle {
   font-size: 2rem;
   text-align: center;
   padding-bottom: 2rem;
 }
 
-.about-me,
-.about-trybe {
-  width: 30vw;
-  text-indent: 2rem;
+.about-column-text {
+  font-size: 1rem;
   letter-spacing: 0.1rem;
-  background: rgb(35, 35, 35);
-  padding: 1.5rem;
-  border-radius: 1rem;
-  border-bottom: 2px solid rgb(124, 0, 124);
+  text-indent: 2rem;
 }
 
-@media only screen and (max-width: 1279px) {
-  .page-title {
-    padding: 2rem 0 1rem 0;
-  }
-
+@media only screen and (max-width: 1150px) {
   .about-wrapper {
-    flex-direction: column;
     width: 80vw;
+    justify-content: space-evenly;
   }
 
-  .about-me,
-  .about-trybe {
-    width: 80vw;
+  .about-column {
+    width: 35vw;
     margin-bottom: 1rem;
-    font-size: 0.8rem;
+  }
+
+  .about-column-text {
     text-indent: 1rem;
     text-align: justify;
+  }
+}
+
+@media only screen and (max-width: 975px) {
+  .about-wrapper {
+    height: fit-content;
+    width: 55vw;
+    flex-direction: column;
+
+    margin: 2rem 0;
+  }
+
+  .about-column {
+    width: 100%;
+  }
+
+  .about-column-subtitle {
+    font-size: 1.5rem;
+  }
+
+  .about-column-text {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .about-wrapper {
+    width: 90vw;
   }
 }

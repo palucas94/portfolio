@@ -11,14 +11,14 @@
 .dotnav-link {
   cursor: pointer;
   margin: 0.5rem;
-  border: 0.4rem solid rgb(255, 255, 255);
+  border: 0.4rem solid var(--color-white);
   border-radius: 100%;
 }
 
 .dotnav-selected {
   cursor: pointer;
   margin: 0.5rem;
-  border: 0.4rem solid rgb(127, 0, 127);
+  border: 0.4rem solid var(--color-dark-magenta);
   border-radius: 100%;
 }
 
